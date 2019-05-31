@@ -21,28 +21,22 @@
 
 # Vehicle is the base class of all of these subclasses
 class Vehicle:
-  def __init__(self):
-    #   GroundVehicle is a subclass of Vehicle
-    class GroundVehicle(Vehicle):
-      def __init__(self):
-        pass
-        #   Car is a subclass of Vehicle and GroundVehicle
-        class Car(GroundVehicle):
-          def __init__(self):
-            pass
-        #   Motorcycle is a subclass of Vehicle and GroundVehicle
-        class Motorcycle(GroundVehicle):
-          def __init__(self):
-            pass
-    #   FlightVehicle is a subclass of Vehicle
-    class FlightVehicle(Vehicle):
-      def __init__(self):
-        pass
-        #   Starship is a subclass of FlightVehicle and Vehicle
-        class Starship(FlightVehicle):
-          def __init__(self):
-            pass
-        #   Airplane is a subclass of FlightVehicle and Vehicle
-        class Airplane(FlightVehicle):
-          def __init__(self):
-            pass
+    pass
+#   GroundVehicle is a childclass of Vehicle
+class GroundVehicle(Vehicle):
+    pass
+#   Car is a grandchildclass of Vehicle and childclass of GroundVehicle
+class Car(GroundVehicle):
+    pass
+#   Motorcycle is a grandchildclass of Vehicle and childclass of GroundVehicle
+class Motorcycle(GroundVehicle):
+    pass
+#   FlightVehicle is a childclass of Vehicle
+class FlightVehicle(Vehicle):
+    pass
+  #   Starship is a childclass of FlightVehicle and grandchildclass of Vehicle
+class Starship(FlightVehicle):
+    pass
+#   Airplane is a childclass of FlightVehicle and grandchildclass of Vehicle
+class Airplane(FlightVehicle):
+    pass
